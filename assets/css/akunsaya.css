@@ -1,0 +1,328 @@
+
+body {
+	width: 100%;
+	height: 900px;
+	display: flex;
+	flex-direction: column;
+	background-color: #f1f1f1;
+}
+	
+/*Header*/
+    	.header {
+    		width: 100%;
+    		height: 80px;
+    		display: flex;
+    		flex-direction: row;
+    		background-color: #424242;
+    		position: fixed;
+    		margin: -10px 0px 0px -10px;
+    	}
+    	.logo {
+    		width: 15%;
+    		height: 80px;
+			color: white;
+			margin: 5px 10px 5px 5px; 
+			/*background-color: green; */
+    	}
+    	.luaslogo {
+    		width: 20%;
+    		height: 70px;
+    		margin: 5px 10px 5px 5px;  
+    	}
+    	.putih{
+			width: 70%;
+			height:70px; 
+		}
+    	.kat {
+    		width: 10%;
+    		height: 80px;
+			color: white;
+			margin: 30px 10px 5px 5px;
+	/*		background-color: yellow*/
+			font-family: lato;
+			font-weight: bold;
+    	}
+    	.search {
+    		width: 70%;
+    		height: 80px;
+			color: white;
+			margin: 17px 10px 5px 10px;
+			border-radius: 2px;
+			/background-color: blue;/
+    	}
+    	.tom{
+    		width: 100px;
+    		height: 40px;
+    		border-radius: 3px;
+    	}
+    	#tombol {
+    		margin-top: -5px;
+    		height: 35px;
+    	}
+    	.cari{
+    		width: 70%;
+    		height: 35px;
+    		border-radius: 3px;
+    		margin-top: 8px;
+
+    	}
+    	.tombol {
+    		height: 35px;
+    	}
+    	.pesanan {
+    		width: 15%;
+    		height: 80px;
+			color: white;
+			margin: 30px 10px 5px 20px;
+			font-family: lato;
+			font-weight: bold;
+	/*		background-color: red;*/
+    	}
+    	.gambarA {
+    		width: 5%;
+    		height: 80px;
+			color: white;
+			margin: 10px 10px 5px 5px;
+    	}
+    	.about {
+    		width: 5%;
+    		height: 80px;
+			color: white;
+			margin: 30px 20px 5px 30px;
+			font-family: lato;
+			font-weight: bold;
+    	}
+    	.yoo {
+    		width: 50px;
+    		height: 50px;
+    	}
+    	#putihh {
+    		color: white;
+    	}
+  .dropbtn {
+  background-color: #424242;
+  color: white;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  /*background-color: #2980B9;*/
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color:white;}
+
+.show {display: block;}
+
+    	a {
+    		color: white;
+    	}
+    	img{
+			width: 50px;
+			height: 50px;
+		}
+
+	h2{
+		color: black;
+	}
+	.bg{
+		width: 100%;
+		height: 600px;
+		display: flex;
+		background-color: #f1f1f1;
+		justify-content: space-around;
+	}
+	.profil{
+		
+		width: 95%;
+		height: 500px;
+		display: flex;
+		background-color: white;
+		margin-top: 85px;
+		flex-direction: row;
+		justify-content: center;
+		border: 1px lightgrey;
+
+	
+		}
+	.kiri{
+		width: 50%;
+		height: 500px;
+		display: flex;
+		flex-direction: column;
+		/*background-color: blue;*/
+		flex-direction: column;
+
+	}
+	.kotak{
+			width: 70%;
+			height: 40px;
+			display: flex;
+			/*justify-content: center;*/
+			margin-top: 20px;
+			margin-left: 80px;
+			/*background-color: red;*/
+			flex-direction: row;
+			
+	}
+	.kotak2{
+			width: 70%;
+			height: 40px;
+			display: flex;
+			margin-top: 20px;
+			justify-content: center;
+			
+			
+	}
+	.email {
+			width: 90%;
+			height: 40px;
+			border-radius: 4px;
+			background-color: white;
+			color: grey;
+			margin-left: 50px;
+
+
+	}
+			
+	
+	.tulisan{
+			width: 90px;
+			height: 30px;
+			text-align: left;
+		}
+	p {
+			color: black;
+			text-align: left;
+		
+	}
+	.kanan{
+		width: 45%;
+		height: 500px;
+		display: flex;
+	/*	background-color: green;*/
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+
+	}
+	.select{
+		width: 90%;
+			height: 40px;
+			border-radius: 5px;
+			background-color: white;
+			color: grey;
+			margin-left: 50px;
+
+	}
+	.ttl{
+		margin-left: 30px;
+		border-radius: 4px;
+	}
+	.almt{
+		margin-left: 60px;
+		width: 500px;
+		height: 100px;
+		border-radius: 4px;
+	}
+	.gbakun{
+		height: 300px;
+		width: 300px;
+	}
+	
+	/*Footer*/
+    	.footer {
+			width: 100%;
+			height: 300px;
+			display: flex;
+			background-color: #424242;
+			flex-direction: column;
+			margin: 15px 0px 0px -5px;
+
+		}
+		.atas {
+			width: 100%;
+			height: 50px;
+			justify-content: space-around;
+			display: flex;
+			flex-direction: row;
+		}
+		h2 {
+			color: white;
+		}
+		.bawah {
+			width: 100%;
+			height: 250px;
+			display: flex;
+			flex-direction: row;
+		}
+		.alamat {
+			width: 25%;
+			height: 250px;
+			flex-direction: column;
+		}
+		.contact {
+			width: 25%;
+			height: 250px;
+			display: flex;
+			flex-direction: column;
+		}
+		.payment {
+			width: 25%;
+			height: 250px;
+			display: flex;
+			flex-direction: column;
+		}
+		.partner {
+			width: 25%;
+			height: 250px;
+			display: flex;
+			flex-direction: column;
+		}
+		.is {
+			width: 35%;
+			height: 60px;
+			display: flex;
+			flex-direction: row;
+		}
+		.putih {
+			color: white;
+			font-style: bold;
+			margin-left: 20px;
+		}
+		iframe {
+			margin-left: 40px;
+			margin-top: 20px;
+		}
+		p {
+			color: black;
+			margin-left: 15px; 
+		}
+		img {
+			width: 50%;
+			height: 50px;
+		}

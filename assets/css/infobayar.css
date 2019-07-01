@@ -1,0 +1,66 @@
+<style>
+	body {
+		width: 100%;
+		height: 600px;
+		/*display: flex;
+		flex-direction: column;
+		align-content: center;*/
+		background-color: #f1f1f1;
+	}
+	.all {
+		width: 100%;
+		height: 600px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: #f1f1f1;
+	}
+	.atas {
+		width: 70%;
+		height: 100px;
+		justify-content: center;
+		margin-bottom: 10px;
+		/*border: 1px solid black;*/
+		text-align: center;
+		background-color: white;
+	}
+	.tengah {
+		width: 70%;
+		height: 150px;
+		margin-bottom: 10px;
+		/*border: 1px solid black;*/
+		background-color: white;
+	}
+	.bawah {
+		width: 70%;
+		height: 200px;
+		/*border: 1px solid black;*/
+		background-color: white;
+	}
+	h4 {
+		font-style: underline;
+	}
+	.spesial {
+		font-size: 28px;
+		color: red;
+		font-style: bold;
+	}
+	p{
+		margin-left: 20px;
+	}
+	.pencet{
+		width: 70%;
+		height: 50px;
+		/*border: 1px solid black;*/
+		/*background-color: grey;*/
+		margin-top: 20px;
+	}
+	.pen{
+		width: 100%;
+		height: 50px;
+		border-radius: 5%;
+	}
+	.pen:hover {
+		background-color: lightgrey;
+	}
+</style>
