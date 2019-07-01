@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>keranjang</title>
+</head>
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets\js\angular.min.js"></script>
+	<script type="text/javascript" src="assets\js\angular-animate.js"></script>
+<link rel="stylesheet" type="text/css" href="assets\css\keranjang.css">
+
+<body ng-app="">
+		<div class="header">
+		<div class="logo luaslogo">
+			<a href="index.html">
+				<img class="putih" src="assets\img\Putih.png">
+			</a>
+		</div>
+		<div class="kat"><a id="putihh" href="kamera.html">Kamera</a></div>
+		<div class="kat"><a id="putihh" href="aksesoris.html">Aksesoris</a></div>
+		<div class="search">
+			<input class="cari" type="text" name="" placeholder=" search..." required="">
+			<button id="tombol" type="button" class="btn btn-light">Cari</button>
+		</div>
+		<div class="pesanan"><a id="putihh" href="pesanan.html">Pesanan Saya</a></div>
+		<div class="gambarA">
+			<!-- <img class="yoo" src="akun.png"> -->
+			<div class="dropdown">
+			  <button onclick="myFunction()" class="dropbtn"><img class="yoo" src="assets\img\akun.png"></button>
+			  <div id="myDropdown" class="dropdown-content">
+			    <a href="login.html">Login</a>
+			    <a href="daftar.html">Daftar</a>
+			    <a href="akunsaya.html">Akun Saya</a>
+			  </div>
+			</div>
+
+			<script>
+			/* When the user clicks on the button, 
+			toggle between hiding and showing the dropdown content */
+			function myFunction() {
+			  document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown if the user clicks outside of it
+			window.onclick = function(event) {
+			  if (!event.target.matches('.dropbtn')) {
+			    var dropdowns = document.getElementsByClassName("dropdown-content");
+			    var i;
+			    for (i = 0; i < dropdowns.length; i++) {
+			      var openDropdown = dropdowns[i];
+			      if (openDropdown.classList.contains('show')) {
+			        openDropdown.classList.remove('show');
+			      }
+			    }
+			  }
+			}
+			</script>
+		</div>
+		<div class="about"><a id="putihh" href="faq.html">Bantuan</a></div>
+	</div>
+
+	<div ng-app="" class="konten">
+		<div class="kotak">
+			<div class="up">
+				<div class="cc">produk</div>
+			</div>
+			<div class="do">
+				<div class="isi">
+					<img class="aa" src="assets\img\yi2.jpg">
+				</div>
+				<div class="isi1">
+					<p>Yi Action Black</p>
+				</div>
+				<div class="isi0">
+					<p>harga</p>
+					<div class="yy">Rp.<input disabled required class="input-form-number" type="text" name="" value="" ng-model="harga" ng-init="harga=950000"></div>
+				</div>
+				<div class="isi1">
+					<p>jumlah</p>
+					<input required oninvalid="this.setCustomValidity('masukkan jumlah barang')" oninput="setCustomValidity('')" class="input-form-number laf" type="number" name="" value="1" placeholder="Jumlah" ng-model="jumlah">
+				</div>
+				<div class="isi1">
+					<p>total</p>
+					<div>Rp.<input disabled required class="input-form-value" type="number" name="" value="{{jumlah*950000}}" placeholder="Rp" ng-model="Hasil"></div>
+				</div>
+			</div>
+		</div>
+		<div class="kotak">
+			<div class="up">
+				<div class="cc">alamat pengirim</div>
+			</div>
+			<div class="do">
+				<div class="isi2">
+					<p>Fajar Nur Pratama</p>
+					<p>085672830619</p>
+				</div>
+				<div class="isi2">
+					<p>RT 02 RW 04 Samigaluh<p>
+					<p>Kab. Kulon Progo, Daerah Istimewa Yogyakarta</p>	
+				</div>
+				<div class="isi2">
+					<p><a class="linkk" href="akunsaya.html">Ganti Alamat Penerima</a><br></p>
+				</div>
+			</div>
+		</div>
+		<div class="kotak">
+			<div class="up">
+				<div class="cc">kurir</div>
+			</div>
+			<div class="do">
+				<div class="isi3">
+					<select>
+						<option>JNT</option>
+						<option>JNE</option>
+						<option>POS</option>
+						<option>GOJEK</option>
+					</select>
+				</div>
+				<div class="isi2">
+					<p>estimasi</p>
+					<p>3-4 hari</p>
+				</div>
+				<div class="isi2">
+					<p>ongkos kirim</p>
+					<p>27.000</p>
+				</div>
+			</div>
+		</div>
+		<div class="kotak">
+			<div class="up">
+				<div class="cc">beri pesan ke penjual</div>
+			</div>
+			<div class="do">
+				<input class="beri" type="text" name="">
+			</div>
+		</div>
+		<div class="kotak">
+			<div class="up">
+				<div class="cc">metode pembayaran</div>
+			</div>
+			<div class="do">
+				<label class="container">Indomaret
+					 <input type="radio" checked="checked" name="radio">
+					  <span class="checkmark"></span>
+					</label>
+					<label class="container">Alfamart
+					  <input type="radio" name="radio">
+					  <span class="checkmark"></span>
+					</label>
+					<label class="container">Transfer Bank
+					  <input type="radio" name="radio">
+					  <span class="checkmark"></span>
+					</label>
+					<label class="container">Kredivo
+					  <input type="radio" name="radio">
+					  <span class="checkmark"></span>
+					</label>
+			</div>
+		</div>
+		<div class="kotak1">
+			<div class="initotal"><p class="totaliki">total pesanan : Rp.</p><input disabled required class="input-form-value" type="number" name="" value="{{jumlah*950000+27000}}" placeholder="Rp" ng-model="Hasil"></div>
+			<a href="infobayar.html"><button class="but2">pesan sekarang</button></a>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="atas">
+			<h2>Alamat</h2>
+			<h2>Contact</h2>
+			<h2>Payment</h2>
+			<h2>Partner</h2>
+			
+		</div>
+		<div class="bawah">
+			<div class="alamat">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.351084989489!2d110.58279151402706!3d-7.752536794412438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a45b0ee43c2a9%3A0x3511db31d451d1f3!2sDimas+Camera!5e0!3m2!1sid!2sid!4v1561546251547!5m2!1sid!2sid" width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<!-- <p class="putih">RT 56 RW 16 Pandes Wedi Klaten Jawa Tengah</p> -->
+			</div>
+			<div class="contact">
+				<a href="https://www.instagram.com/dcamera_/" target="_blank">
+				<div class="is">
+					<img src="assets\img\ig.png">
+					<p class="putih">@dcamera_</p>
+				</div>
+				</a>
+				
+				<a href="https://www.facebook.com/dimasajiny" target="_blank">
+				<div class="is">
+					<img src="assets\img\fb.png">
+					<p class="putih">fb.com/dimasajiny</p>
+				</div>
+				</a>
+
+				<a href="https://api.whatsapp.com/send?phone=6285643528803&text=Halo%20Admin%20Dimas%20Camera" onclick='window.open(&apos;&apos;, &apos;popupwindow&apos;, &apos;scrollbars=yes,width=550,height=520&apos;);return true' target='popupwindow'>
+				<div class="is">
+					<img src="assets\img\wa.png">
+					<p class="putih">085643528803</p>
+				</div>
+				</a> 
+
+				<div class="is">
+					<img src="assets\img\call.png">
+					<p class="putih">085643528803</p>
+				</div>
+			</div>
+			<div class="payment">
+				<div class="is">
+					<img src="assets\img\bri.png">
+					<p class="putih">11631252676763462</p>
+				</div>
+				
+				<div class="is">
+					<img src="assets\img\bni.png">
+					<p class="putih">11631252676763462</p>
+				</div>
+
+				<div class="is">
+					<img src="assets\img\mandiri.png">
+					<p class="putih">11631252676763462</p>
+				</div>
+
+				<div class="is">
+					<img src="assets\img\bca.png">
+					<p class="putih">11631252676763462</p>
+				</div>
+			</div>
+			<div class="partner">
+				<div class="is">
+					<img src="assets\img\jnt.jpg">
+					<p class="putih">JNT_Exspress</p>
+				</div>
+				
+				<div class="is">
+					<img src="assets\img\jne.jpg">
+					<p class="putih">JNE_Express</p>
+				</div>
+
+				<div class="is">
+					<img src="assets\img\pos.png">
+					<p class="putih">POS_Indonesia</p>
+				</div>
+
+				<div class="is">
+					<img src="assets\img\gojek.png">
+					<p class="putih">Gojek_Indonesia</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

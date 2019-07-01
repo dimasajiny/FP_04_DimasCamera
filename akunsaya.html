@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>akun_saya</title>
+</head>
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	function funcname() {
+		alert("data telah berhasil disimpan")
+	}
+</script>
+<link rel="stylesheet" type="text/css" href="assets\css\akunsaya.css">
+
+<body>
+	<div class="header">
+		<div class="logo luaslogo">
+			<a href="index.html">
+				<img class="putih" src="assets\img\Putih.png">
+			</a>
+		</div>
+		<div class="kat"><a id="putihh" href="kamera.html">Kamera</a></div>
+		<div class="kat"><a id="putihh" href="aksesoris.html">Aksesoris</a></div>
+		<div class="search">
+			<input class="cari" type="text" name="" placeholder=" search..." required="">
+			<button id="tombol" type="button" class="btn btn-light">Cari</button>
+		</div>
+		<div class="pesanan"><a id="putihh" href="pesanan.html">Pesanan Saya</a></div>
+		<div class="gambarA">
+			<!-- <img class="yoo" src="akun.png"> -->
+			<div class="dropdown">
+			  <button onclick="myFunction()" class="dropbtn"><img class="yoo" src="assets\img\akun.png"></button>
+			  <div id="myDropdown" class="dropdown-content">
+			    <a href="login.html">Login</a>
+			    <a href="daftar.html">Daftar</a>
+			    <a href="akunsaya.html">Akun Saya</a>
+			  </div>
+			</div>
+
+			<script>
+			/* When the user clicks on the button, 
+			toggle between hiding and showing the dropdown content */
+			function myFunction() {
+			  document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown if the user clicks outside of it
+			window.onclick = function(event) {
+			  if (!event.target.matches('.dropbtn')) {
+			    var dropdowns = document.getElementsByClassName("dropdown-content");
+			    var i;
+			    for (i = 0; i < dropdowns.length; i++) {
+			      var openDropdown = dropdowns[i];
+			      if (openDropdown.classList.contains('show')) {
+			        openDropdown.classList.remove('show');
+			      }
+			    }
+			  }
+			}
+			</script>
+		</div>
+		<div class="about"><a id="putihh" href="faq.html">Bantuan</a></div>
+	</div>
+	
+	<div class="bg">
+		<div class="profil">
+			<div class="kiri">
+				<h2>Profil Saya</h2>
+				<div class="kotak">
+					<div class="tulisan"><p>Email</p></div>	
+					<label class="email">FajarCrott@gmail.com</label>
+				</div>
+
+				<div class="kotak">
+					<div class="tulisan"><p>No Hp</p></div>	
+					<label class="email">085778xxxx42</label>
+				</div>
+
+				<div class="kotak">
+					<div class="tulisan"><p>Jenis Kelamin</p></div>	
+					<select class="select" name="baverage" value="" >
+						<option value="L">Laki-laki</option>
+						<option value="P">Perempuan</option>
+					</select>
+				</div>
+
+				<div class="kotak">
+					<div class="tulisan"><p>Tanggal Lahir</p></div>
+					<input class="ttl" type="date" name="Tanggal Lahir" value="">
+				</div>
+
+				<div class="kotak">
+					<div class="tulisan"><p>Alamat</p></div>	
+					<input class="almt" type="text" name="alamat" value="">
+				</div>
+
+				<div class="kotak">
+					<!-- <button onclick="funcname();">click me</button> -->
+				<input type="button" name="click" value="simpan" onclick="funcname();">
+				</div>
+			</div>
+
+			
+			
+			<div class="kanan">
+				<div>
+					<img class="gbakun" src="assets\img\akun.png">
+				</div>
+				<div class="kotak2">
+				<input type="file" name="click" value="pilih foto">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="atas">
+			<h2 class="putih"><center>Alamat</center></h2>
+			<h2 class="putih">Contact</h2>
+			<h2 class="putih">Payment</h2>
+			<h2 class="putih">Partner</h2>
+			
+		</div>
+		<div class="bawah">
+			<div class="alamat">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.351084989489!2d110.58279151402706!3d-7.752536794412438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a45b0ee43c2a9%3A0x3511db31d451d1f3!2sDimas+Camera!5e0!3m2!1sid!2sid!4v1561546251547!5m2!1sid!2sid" width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<!-- <p class="putih">RT 56 RW 16 Pandes Wedi Klaten Jawa Tengah</p> -->
+			</div>
+			<div class="contact">
+				<a href="https://www.instagram.com/dcamera_/" target="_blank">
+				<div class="is">
+					<img src="assets\img\ig.png">
+					<p class="putih">@dcamera_</p>
+				</div>
+				</a>
+				
+				<a href="https://www.facebook.com/dimasajiny" target="_blank">
+				<div class="is">
+					<img src="assets\img\fb.png">
+					<p class="putih">fb.com/dimasajiny</p>
+				</div>
+				</a>
+
+				<a href="https://api.whatsapp.com/send?phone=6285643528803&text=Halo%20Admin%20Dimas%20Camera" onclick='window.open(&apos;&apos;, &apos;popupwindow&apos;, &apos;scrollbars=yes,width=550,height=520&apos;);return true' target='popupwindow'>
+				<div class="is">
+					<img src="assets\img\wa.png">
+					<p class="putih">085643528803</p>
+				</div>
+				</a> 
+
+				<div class="is">
+					<img src="assets\img\call.png">
+					<p class="putih">085643528803</p>
+				</div>
+			</div>
+			<div class="payment">
+				<div class="is">
+					<img src="assets\img\bri.png">
+					<p class="putih">11631252676763462</p>
+				</div>
+				
+				<div class="is">
+					<img src="assets\img\bni.png">
+					<p class="putih">11631252676763462</p>
+				</div>
+
+				<div class="is">
+					<img src="assets\img\mandiri.png">
+					<p class="putih">11631252676763462</p>
+				</div>
+
+				<div class="is">
+					<img src="assets\img\bca.png">
+					<p class="putih">11631252676763462</p>
+				</div>
+			</div>
+			<div class="partner">
+				<div class="is">
+					<img src="assets\img\jnt.jpg">
+					<p class="putih">JNT_Exspress</p>
+				</div>
+				
+				<div class="is">
+					<img src="assets\img\jne.jpg">
+					<p class="putih">JNE_Express</p>
+				</div>
+
+				<div class="is">
+					<img src="assets\img\pos.png">
+					<p class="putih">POS_Indonesia</p>
+				</div>
+
+				<div class="is">
+					<img src="assets\img\gojek.png">
+					<p class="putih">Gojek_Indonesia</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
